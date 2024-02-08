@@ -1,0 +1,40 @@
+{
+  "name": "@a1danw/aidan-component-lib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a1danw/demo-component-lib"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@a1danw"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/aidan-component-lib.umd.cjs",
+  "module": "./dist/aidan-component-lib.js",
+  "exports": {
+    ".": {
+      "import": "./dist/aidan-component-lib.js",
+      "require": "./dist/aidan-component-lib.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite build",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite-plugin-css-injected-by-js": "^3.4.0",
+    "vue": "^3.3.11"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "vite": "^5.0.8"
+  }
+}
